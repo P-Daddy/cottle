@@ -21,7 +21,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <ProjectGuid>{55D11299-1D83-48F3-BCDC-966017C44CC9}</ProjectGuid>
   </PropertyGroup>

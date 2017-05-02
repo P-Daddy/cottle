@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Cottle.Test</RootNamespace>
     <AssemblyName>Cottle.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>

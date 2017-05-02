@@ -3,21 +3,19 @@ solution: Cottle.sln
 
 matrix:
   include:
-    - os: linux
-      dist: trusty
-      dotnet: 1.0.0-preview2-003121
+    - dotnet: 1.0.1
       mono: latest
-      env: DOTNETCORE=1
+      dist: trusty
 
 install:
   - nuget restore Cottle.sln
-  - nuget install NUnit.Console -Version 3.0.1 -OutputDirectory tests
+  - nuget install NUnit.Console -Version 3.0.1 -OutputDirectory packages
 
 script:
   - xbuild /p:Configuration=Release Cottle.sln
-  - mono ./tests/NUnit.Console.3.0.1/tools/nunit3-console.exe ./Cottle.Test/bin/Release/Cottle.Test.dll
+  - mono ./packages/NUnit.Console.3.0.1/tools/nunit3-console.exe ./Cottle.Test/bin/Release/Cottle.Test.dll
 # - nuget pack -Prop Configuration=Release -Prop Platform=AnyCPU ./Cottle/Cottle.csproj
   - rm -fr ./artifacts
   - dotnet restore
-  - dotnet test ./Cottle.Test -c Release -f netcoreapp1.0
-  - dotnet pack ./Cottle -c Release -o ./artifacts
+  - dotnet test ./Cottle.Test/Cottle.Test.csproj -c Release -f netcoreapp1.0
+  - dotnet pack ./Cottle/Cottle.csproj -c Release -o ./artifacts

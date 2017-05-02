@@ -19,7 +19,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <ProjectGuid>{E470D87D-19CB-4B4D-8C64-30C8DCA97755}</ProjectGuid>
     <AssemblyName>Cottle</AssemblyName>
